@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Graph it</title>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+  <aside class="sidebar">
+    <h2>Navigation</h2>
+    <a href="./index.html" class="nav-link active-tab" >Calculator</a>
+    <a href="#" class="nav-link">Graphing</a>
+    <a href="#" class="nav-link">Solve Equations</a>
+    <a href="#" class="nav-link">Settings</a>
+  </aside>
+
+  <header class="topbar">
+    <h1>Welcome, User</h1>
+  </header>
+
+  <main class="main">
+    <section class="calculator">
+      <input type="text" readonly placeholder="Enter math problem" class="display"/>
+      <div class="buttons-grid-container">
+        <button class="buttons special" onclick="sine()">sin</button>
+        <button class="buttons special" onclick="cosine()">cos</button>
+        <button class="buttons special" onclick="tangent()">tan</button>
+        <button class="buttons special" onclick="asine()">sin⁻¹</button>
+        <button class="buttons special" onclick="acosine()">cos⁻¹</button>
+        <button class="buttons special" onclick="atangent()">tan⁻¹</button>
+        <button class="buttons special" onclick="PI()">π</button>
+        <button class="buttons special" onclick="logBase10()">log</button>
+        <button class="buttons special" onclick="sqrt()">√</button>
+        <button class="buttons Cancel"  onclick="Screencancel()">C</button>
+        <button class="buttons" onclick="Screen('+')">+</button>
+        <button class="buttons" onclick="Screen('-')">-</button>
+        <button class="buttons" onclick="Screen('/')">/</button>
+        <button class="buttons" onclick="Screen('*')">*</button>
+        <button class="buttons" onclick="Screen(9)">9</button>
+        <button class="buttons" onclick="Screen(8)">8</button>
+        <button class="buttons" onclick="Screen(7)">7</button>
+        <button class="buttons" onclick="Screen(6)">6</button>
+        <button class="buttons" onclick="Screen(5)">5</button>
+        <button class="buttons" onclick="Screen(4)">4</button>
+        <button class="buttons" onclick="Screen(3)">3</button>
+        <button class="buttons" onclick="Screen(2)">2</button>
+        <button class="buttons" onclick="Screen(1)">1</button>
+        <button class="buttons" onclick="Screen(0)">0</button>
+        <button class="buttons special" onclick="Screen('.')">.</button>
+        <button class="buttons SPECIAL" onclick="evaluation()">=</button>
+      </div>
+    </section>
+  </main>
+  <script src="./app.js"></script>
+</body>
+</html>
+
